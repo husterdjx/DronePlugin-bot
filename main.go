@@ -16,6 +16,7 @@ func main() {
 	message := os.Getenv("PLUGIN_MESSAGE")
 	githash := os.Getenv("PLUGIN_GITHASH")
 	title := os.Getenv("PLUGIN_TITLE")
+	failed_steps := os.Getenv("DRONE_FAILED_STEPS")
 	/*title := "this is title"
 	author := "djx"
 	branch := "master"
@@ -29,7 +30,8 @@ func main() {
 		"branch": "%s",
 		"message": "%s",
 		"githash": "%s"
-	}`, title, repourl, author, branch, message, githash)
+		"failedsteps": "%s"
+	}`, title, repourl, author, branch, message, githash, failed_steps)
 
 	var jsonStr = []byte(requestBody)
 	fmt.Println(requestBody)
