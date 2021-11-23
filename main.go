@@ -17,7 +17,7 @@ func main() {
 	githash := os.Getenv("PLUGIN_GITHASH")
 	/*author := "djx"
 	branch := "master"
-	repourl := "https://github.com/husterdjx/Data-Structure-Lab"
+	repourl := "https://github.com/husterdjx/drone-bot"
 	message := "this is message"
 	githash := "this is githash"*/
 	requestBody := fmt.Sprintf(`{
