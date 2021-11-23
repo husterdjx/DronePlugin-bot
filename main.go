@@ -29,7 +29,7 @@ func main() {
 		"author": "%s",
 		"branch": "%s",
 		"message": "%s",
-		"githash": "%s"
+		"githash": "%s",
 		"failedsteps": "%s"
 	}`, title, repourl, author, branch, message, githash, failed_steps)
 
