@@ -9,6 +9,7 @@ steps:
 - name: webhook
   image: registry.cn-beijing.aliyuncs.com/husterdjx/droneplugin-bot:latest
   settings:
+    title: {add title here}
     author: ${DRONE_COMMIT_AUTHOR}
     branch: ${DRONE_COMMIT_BRANCH}
     repourl: ${DRONE_REPO_LINK}

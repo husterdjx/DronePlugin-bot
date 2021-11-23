@@ -15,18 +15,20 @@ func main() {
 	repourl := os.Getenv("PLUGIN_REPOURL")
 	message := os.Getenv("PLUGIN_MESSAGE")
 	githash := os.Getenv("PLUGIN_GITHASH")
+	title := os.Getenv("PLUGIN_TITLE")
 	/*author := "djx"
 	branch := "master"
 	repourl := "https://github.com/husterdjx/drone-bot"
 	message := "this is message"
 	githash := "this is githash"*/
 	requestBody := fmt.Sprintf(`{
+		"title": "%s",
 		"repourl": "%s",
 		"author": "%s",
 		"branch": "%s",
 		"message": "%s",
 		"githash": "%s"
-	}`, repourl, author, branch, message, githash)
+	}`, title, repourl, author, branch, message, githash)
 
 	var jsonStr = []byte(requestBody)
 	fmt.Println(requestBody)
