@@ -16,7 +16,8 @@ func main() {
 	message := os.Getenv("PLUGIN_MESSAGE")
 	githash := os.Getenv("PLUGIN_GITHASH")
 	title := os.Getenv("PLUGIN_TITLE")
-	/*author := "djx"
+	/*title := "this is title"
+	author := "djx"
 	branch := "master"
 	repourl := "https://github.com/husterdjx/drone-bot"
 	message := "this is message"
